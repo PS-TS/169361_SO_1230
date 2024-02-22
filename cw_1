@@ -32,6 +32,8 @@ drwxr-xr-x  2 st22 st22          4096 02-22 13:21 Dane
 -rwxrwxr-x  1 st22 domain admins  807 2021-08-04  .profile
 drwxrwxr-x  2 st22 domain admins 4096 2021-10-14  public_html
 
+// sprzątnąłem po sobie
+
 st22@orfi:~$ rmdir Dane
 
 st22@orfi:~$ ls -all
