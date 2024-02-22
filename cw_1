@@ -1,0 +1,20 @@
+st22@orfi:~$ mkdir Dane
+st22@orfi:~$ cd Dane
+st22@orfi:~/Dane$ cd ..
+st22@orfi:~$ cd ~
+st22@orfi:~$ ls -l
+razem 8
+drwxr-xr-x 2 st22 st22          4096 02-22 13:21 Dane
+drwxrwxr-x 2 st22 domain admins 4096 2021-10-14  public_html
+st22@orfi:~$ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  Dane  .profile  public_html
+st22@orfi:~$ ls -all
+razem 32
+drwxrwxr-x  4 st22 domain admins 4096 02-22 13:21 .
+drwxr-xr-x 89 root root          4096 01-15 20:31 ..
+-rw-------  1 st22 st22            51 02-22 12:14 .bash_history
+-rwxrwxr-x  1 st22 domain admins  220 2021-08-04  .bash_logout
+-rwxrwxr-x  1 st22 domain admins 3526 2021-08-04  .bashrc
+drwxr-xr-x  2 st22 st22          4096 02-22 13:21 Dane
+-rwxrwxr-x  1 st22 domain admins  807 2021-08-04  .profile
+drwxrwxr-x  2 st22 domain admins 4096 2021-10-14  public_html
