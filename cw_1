@@ -1,3 +1,16 @@
+Oznaczenia katalogów:
+bieżący  .
+główny  \
+nadrzędny ..
+domowy  ~
+
+Oznaczenia symboli
+- zwykły plik
+d katalog
+c urządzenie znakowe
+b urządzenie blokowe
+l miękki link
+
 st22@orfi:~$ mkdir Dane
 st22@orfi:~$ cd Dane
 st22@orfi:~/Dane$ cd ..
