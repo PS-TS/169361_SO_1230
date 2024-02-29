@@ -17,13 +17,12 @@ cd ..
 cd ..
 cd Teksty
 nano Zestawienie.txt //(wpisywanie: 169361 29.02.2024 13:03 Pochmurnie)
-        // 3.
+        // 2ab.
 cp Zestawienie.txt ~/st_2024/Programy/Shell/Skrypty/spis24.txt
 cd ~/st_2024/Programy/Shell/Skrypty
 nano spis24.txt
 cd ~/st_2024
-rm -r Programy
-        // 4.
+        // 3.
 pwd
         // 5.
 cd Teksty/Podania
@@ -42,9 +41,11 @@ touch list.txt
         // 9.
 mv *.txt ../Podania
         // 10.
+rm -r Programy
+        // 11.
 cd ../Podania
 cp *list* ../Listy
-        // 11.
+        // 12.
 cd ../Listy
 rm ????.txt
 
