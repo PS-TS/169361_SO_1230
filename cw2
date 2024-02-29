@@ -44,7 +44,8 @@ mv *.txt ../Podania
         // 10.
 cd ../Podania
 cp *list* ../Listy
-
-
+        // 11.
+cd ../Listy
+rm ????.txt
 
 
