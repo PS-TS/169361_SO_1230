@@ -40,3 +40,11 @@ touch WielkieOczy.txt
 touch ToNieJestList
 touch list.txt
         // 9.
+mv *.txt ../Podania
+        // 10.
+cd ../Podania
+cp *list* ../Listy
+
+
+
+
