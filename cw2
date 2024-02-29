@@ -1,0 +1,15 @@
+mkdir st_2024
+cd st_2024
+mkdir Dane
+mkdir Teksty
+mkdir Programy
+cd Teksty
+mkdir Listy
+mkdir Podania
+cd..
+cd Programy
+mkdir C
+mkdir Shell
+cd Shell
+mkdir Skrypty
+
