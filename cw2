@@ -24,21 +24,21 @@ nano spis24.txt
 cd ~/st_2024
         // 3.
 pwd
-        // 5.
+        // 4.
 cd Teksty/Podania
 ln -s ~/st_2024/Dane Odsylacz_Dane
-        // 6.
+        // 5.
 ln -s ~/st_2024/Programy/Shell/Skrypty Skrypty_Odsylacz
-        // 7.
+        // 6.
 cd ../Listy
 ln -s ~/st_2024/Teksty/Zestawienie.txt DoZestawienia
-        // 8.
+        // 7.
 touch ListDoEwy.txt
 touch OlaChceKota.txt
 touch WielkieOczy.txt
 touch ToNieJestList
 touch list.txt
-        // 9.
+        // 8.
 mv *.txt ../Podania
         // 10.
 rm -r Programy
