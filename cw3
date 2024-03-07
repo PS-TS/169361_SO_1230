@@ -9,3 +9,8 @@ mkdir Kopie
 cd ~/Przepisy
 ln -s ~/Dane/Zapiski.txt AdZapisek
 3.
+cd ~
+chmod 744 Notatki
+cd Dane
+chmod u=rwx,g=rw,o=r Zapiski.txt
+4.
