@@ -14,3 +14,13 @@ chmod 744 Notatki
 cd Dane
 chmod u=rwx,g=rw,o=r Zapiski.txt
 4.
+touch Plik_testowy.txt
+rw-r--r-- plik można odczytać i posiada się dostęp do zawartości, 
+ale tylko właściciel może go edytować lub zmieniać prawa dostępu, przenieść / skopiować, 
+nikt nie może go wykonać dopóki uprawnienia nie zostaną zmienione
+5. 
+drwxr-xr-x - katalog gdzie właściciel może robić wszystko 
+a grupa/inni mogą tylko odczytać jego zawartość bądź wykonać go
+Podobnie wewnątrz pliku właściciel może utworzyć podkatalog, skopiować plik, usunąć czy przenieść,
+podczas kiedy pozostali muszą ograniczyć się do odczytu i wykonania.
+6.
