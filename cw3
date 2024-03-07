@@ -32,3 +32,10 @@ mkdir Proba1
 rw-r----- dla plik1.txt
 drwxr-x--- dla Proba
 8.
+Struktury opisujące pliki w systemie, zawierają informacje o plikach (jak położenie na dysku czy prawa dostępu)
+9.
+cd ~/Notatki
+ls -i
+10.
+System musi wyszukać plik w strukturze katalogów, sprawdzić prawa dostępu, i jeśli prawa pozwalają
+to otworzyć plik w trybie do odczytu, zebrać dane i zamknąć plik
