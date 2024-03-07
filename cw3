@@ -1,4 +1,4 @@
-1.
+u1.
 mkdir Notatki
 mkdir Przepisy
 mkdir Dane
@@ -24,3 +24,11 @@ a grupa/inni mogą tylko odczytać jego zawartość bądź wykonać go
 Podobnie wewnątrz pliku właściciel może utworzyć podkatalog, skopiować plik, usunąć czy przenieść,
 podczas kiedy pozostali muszą ograniczyć się do odczytu i wykonania.
 6.
+umask 0027
+7.
+cd Dane
+touch plik1.txt
+mkdir Proba1
+rw-r----- dla plik1.txt
+drwxr-x--- dla Proba
+8.
