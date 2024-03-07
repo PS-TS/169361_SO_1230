@@ -1,0 +1,11 @@
+1.
+mkdir Notatki
+mkdir Przepisy
+mkdir Dane
+cd Dane
+nano Zapiski.txt (czwartek, /dev)
+mkdir Kopie
+2.
+cd ~/Przepisy
+ln -s ~/Dane/Zapiski.txt AdZapisek
+3.
