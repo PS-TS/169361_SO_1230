@@ -47,3 +47,4 @@ find /dev -type b | wc -l
 find ~ -iname "[ac-ew]*" | wc -l
 
 3c
+find . -mindepth 2 -maxdepth 3 -type d |wc -l
