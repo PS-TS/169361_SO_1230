@@ -15,7 +15,11 @@ touch nowy.txt
 cat dane22.txt drzewo.txt wynik.txt 0 > nowy.txt
 
 1d
+who | wc -l
+
 1e
+tree | wc -l
+
 2a
 2b
 2c
