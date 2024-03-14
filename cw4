@@ -30,16 +30,20 @@ find /dev -type c |wc -l
 find ~ -perm u=r-x
 
 2d
-find -iname "[a-fw]*" -exec cat {} \;
+find ~ -iname "[a-fw]*" -exec cat {} \;
 
 2e
-find -mindepth 2 -maxdepth 3 -not -empty -mmin -30
+find ~ -mindepth 2 -maxdepth 3 -not -empty -mmin -30
 
 2f
-find -amin -30
-find -cmin -30
-find -mmin -30
+find ~ -amin -30
+find ~ -cmin -30
+find ~ -mmin -30
 
 3a
+find /dev -type b | wc -l
+
 3b
+find ~ -iname "[ac-ew]*" | wc -l
+
 3c
