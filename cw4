@@ -36,9 +36,9 @@ find ~ -iname "[a-fw]*" -exec cat {} \;
 find ~ -mindepth 2 -maxdepth 3 -not -empty -mmin -30
 
 2f
-find ~ -amin -30
-find ~ -cmin -30
-find ~ -mmin -30
+find ~ -type f -amin -30
+find ~ -type f -cmin -30
+find ~ -type f -mmin -30
 
 3a
 find /dev -type b | wc -l
