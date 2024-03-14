@@ -33,7 +33,13 @@ find ~ -perm u=r-x
 find -iname "[a-fw]*" -exec cat {} \;
 
 2e
+find -mindepth 2 -maxdepth 3 -not -empty -mmin -30
+
 2f
+find -amin -30
+find -cmin -30
+find -mmin -30
+
 3a
 3b
 3c
