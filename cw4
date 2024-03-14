@@ -1,0 +1,4 @@
+touch dane22.txt
+echo "Pochmurnie" > dane22.txt
+ls -l >> dane22.txt
+pwd >> dane22.txt
