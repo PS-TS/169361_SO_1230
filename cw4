@@ -48,3 +48,9 @@ find ~ -iname "[ac-ew]*" | wc -l
 
 3c
 find . -mindepth 2 -maxdepth 3 -type d |wc -l
+
+Midnight Commander
+1. alt+7  i wpisać nazwę dane22
+2. alt+5  i wpisać ewentualną ścieżkę
+3. tab i wyklikać (lub strzałki enter)
+4. przejść do katalogu i alt+8 enter
