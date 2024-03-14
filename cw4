@@ -1,4 +1,27 @@
+1a
 touch dane22.txt
 echo "Pochmurnie" > dane22.txt
 ls -l >> dane22.txt
 pwd >> dane22.txt
+
+1b
+touch drzewo.txt
+touch wynik.txt
+tree > drzewo.txt
+cat dane22.txt drzewo.txt > wynik.txt
+
+1c
+touch nowy.txt
+cat dane22.txt drzewo.txt wynik.txt 0 > nowy.txt
+
+1d
+1e
+2a
+2b
+2c
+2d
+2e
+2f
+3a
+3b
+3c
