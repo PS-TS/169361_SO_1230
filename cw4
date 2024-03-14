@@ -21,7 +21,12 @@ who | wc -l
 tree | wc -l
 
 2a
+find ~ -empty | wc -l
+find ~/* -empty | wc -l
+
 2b
+find /dev -type c |wc -l
+
 2c
 2d
 2e
