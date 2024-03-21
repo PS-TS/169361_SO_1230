@@ -29,6 +29,11 @@ grep -En "o," *
 grep -En '\\' *
 grep -En "[4]..[^\*]" *
 4.
+nn1=10
+nn2=5
+echo $[$nn1+$nn2]
+nn1=$[$nn1+$nn2]
+unset nn2
 5.
 6.
 7.
