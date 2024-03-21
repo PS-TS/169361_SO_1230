@@ -20,6 +20,8 @@ s169361@orfi:~$ echo " ola i ala" >> tekst21_03.txt
 s169361@orfi:~$ echo "  ala" >> tekst21_03.txt
 
 3.
+grep -b "^ala" *
+grep -b "tola i ala$" *
 4.
 5.
 6.
