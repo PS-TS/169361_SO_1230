@@ -22,6 +22,8 @@ s169361@orfi:~$ echo "  ala" >> tekst21_03.txt
 3.
 grep -b "^ala" *
 grep -b "tola i ala$" *
+grep -b "a+l+a*o*" *
+grep -b "?l+?" *
 4.
 5.
 6.
