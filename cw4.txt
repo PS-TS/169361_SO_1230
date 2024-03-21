@@ -1,0 +1,27 @@
+1.
+echo $HOME
+/home/domena/s169361 //zawsze do katalogu domowego
+echo $_
+/home/domena/s169361 // wyświetla poprzedni obiekt
+  
+2.
+s169361@orfi:~$ touch tekst21_03.txt
+s169361@orfi:~$ echo "kawa i herbata ala" >> tekst21_03.txt
+s169361@orfi:~$ echo "aallaan ***" >> tekst21_03.txt
+s169361@orfi:~$ echo "ela, jola, tola i allibaba" >> tekst21_03.txt
+s169361@orfi:~$ echo "kot\i pies\ ali" >> tekst21_03.txt
+s169361@orfi:~$ echo "ala 4-2=2" >> tekst21_03.txt
+s169361@orfi:~$ echo "alla 4*5=20" >> tekst21_03.txt
+s169361@orfi:~$ echo "allo alo, tola i ala" >> tekst21_03.txt
+s169361@orfi:~$ echo "pies aalli alli" >> tekst21_03.txt
+s169361@orfi:~$ echo "aalllaa tollla" >> tekst21_03.txt
+s169361@orfi:~$ echo " alla 4+3=7 ala" >> tekst21_03.txt
+s169361@orfi:~$ echo " ola i ala" >> tekst21_03.txt
+s169361@orfi:~$ echo "  ala" >> tekst21_03.txt
+
+3.
+4.
+5.
+6.
+7.
+8.
