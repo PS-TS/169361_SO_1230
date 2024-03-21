@@ -35,6 +35,11 @@ echo $[$nn1+$nn2]
 nn1=$[$nn1+$nn2]
 unset nn2
 5.
+echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export PATH=$PATH:$(pwd)
 6.
+echo $PS1
+\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
 7.
 8.
