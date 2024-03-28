@@ -1,0 +1,7 @@
+1.
+x=5
+y=10
+if [ $x -lt $y ]; then echo "x mniejsze"; else echo "y mniejsze"; fi
+
+2
+if [ -f dane.txt ]; then echo "jest"; else echo "nie ma"; fi
