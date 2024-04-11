@@ -19,7 +19,6 @@ echo ${zmienna##*Pliki} //wyświetla /Dane
 4.
   
 nano skrypt  
-chmod 777 skrypt
 #!/bin/bash
 fun1 () {
 echo DZIALA FUN1
@@ -34,7 +33,23 @@ fun1
 echo "W glownym d22=" $d22
 echo „Glowny – koniec”
 exit 0
+chmod 760 skrypt
 ./skrypt
 5.
-
-  
+nano nowyskrypt
+chmod 760 nowyskrypt
+#!/bin/bash
+2 fun1 () {
+3 echo "dziala fun1"
+4 echo "Parametry funkcji:"
+5 echo "$*"
+6 echo "1-4: $1, $2, $3, $4"
+7 }
+8 echo "dziala GLOWNY"
+9 echo "Jego parametry: $*"
+10 fun1 Dane pobrane: $2 $3
+11 echo "GLOWNY - cd"
+12 echo "koniec glownego"
+13 exit 0
+chmod 760 nowyskrypt
+./nowyskrypt
