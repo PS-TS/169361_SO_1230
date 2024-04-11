@@ -1,0 +1,40 @@
+1.
+cat /etc/passwd | cut -d":" -f1,3,6 
+cat /etc/passwd | tr -s ":" | cut -d":" -f1,3,5
+cat /etc/passwd | tr -s ":" | cut -d":" -f1,3,5 | tr ":" " "
+
+wypisują użytkowników, ostatnie polecenie zamienia separatory na spacje
+
+2.
+ls -l | cut -d" " -f1,6,9
+3.
+echo ${a:-plikZERO}
+zmienna=/home/jan23/Pliki/projekt1/Pliki/Dane
+echo $zmienna
+echo ${#a} //wyświetla 0
+echo ${zmienna%Pliki*} //wyświetla /home/jan23/Pliki/projekt1/
+echo ${zmienna%%Pliki*} //wyświetla /home/jan23/
+echo ${zmienna#*Pliki} //wyświetla /projekt1/Pliki/Dane
+echo ${zmienna##*Pliki} //wyświetla /Dane
+4.
+  
+nano skrypt  
+chmod 777 skrypt
+#!/bin/bash
+fun1 () {
+echo DZIALA FUN1
+d22=555
+echo "w fun1 d22=" $d22
+echo "w fun1 k1=" $k1
+}
+echo „SKRYPT GLOWNY”
+k1=33
+echo "W glownym k1=" $k1
+fun1
+echo "W glownym d22=" $d22
+echo „Glowny – koniec”
+exit 0
+./skrypt
+5.
+
+  
