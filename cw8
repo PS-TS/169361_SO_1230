@@ -17,7 +17,15 @@ chmod 700 skrypt805
 
 2.1
 nano skrypt2
+#!/bin/bash
+echo zmienna powloki uruchamiajacej a= $a
+echo zmienna środowiskowa b=$b
+2.2
+chmod 700 skrypt2
+2.3
 a=12
 b="Ala i Kot"
+2.4
 export b
+2.5,6,7
 ./skrypt2
