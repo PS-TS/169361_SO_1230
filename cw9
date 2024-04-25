@@ -1,0 +1,11 @@
+1.
+  ps -A| wc -l  //163
+  Root jest właścicielem procesów systemowych i sieciowych
+[kthreadd]
+  \_ sshd: s169361 [priv]
+    \_ sshd: s169361@pts/13
+      \_ -bash
+        \_ps axjf
+ps -lC bash //priorytet 80
+
+2.
