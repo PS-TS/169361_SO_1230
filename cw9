@@ -1,11 +1,23 @@
 1.
   ps -A| wc -l  //163
+
   Root jest właścicielem procesów systemowych i sieciowych
+
 [kthreadd]
   \_ sshd: s169361 [priv]
     \_ sshd: s169361@pts/13
       \_ -bash
         \_ps axjf
+
 ps -lC bash //priorytet 80
 
 2.
+Najwięcej czasu
+455 mysql     20   0 2846268 152908   4928 S   0,3   3,8 224:20.31 mysqld
+
+Nawięcej pamięci
+455 mysql     20   0 2846268 152908   4928 S   0,7   3,8 224:20.47 mysqld
+
+Program top
+1703885 s169361   20   0   19804   4268   3540 R   4,8   0,1   0:00.16 top
+PID 1703885 PPID 1702602 priorytet 0
