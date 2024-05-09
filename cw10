@@ -1,8 +1,31 @@
 1.
-  #!/bin/bash
-  echo skrypt
-  echo wczytano: $*
-  echo katalogi do utworzenia: $1, $2
-  cd ~
-  mkdir -p $1, $2
-  ps > $3
+#!/bin/bash
+echo skrypt
+echo wczytano: $*
+echo katalogi do utworzenia: $1, $2
+cd ~
+mkdir -p $1, $2
+ps > $3
+2.
+#!/bin/bash
+echo -n Podaj nazwe pliku:
+read plik
+echo podana nazwa to: $plik
+if find . -name $plik
+then
+echo JEST - jego zawartosc:
+cat $plik
+else echo BRAK
+fi
+3.
+#!/bin/bash
+echo skrypt
+echo Katalog biezacy- $(pwd)
+echo podaj nazwe katalogu do przeszukania
+echo ze sciezka od katalogu domowego:
+read kat
+echo podana nazwa to $kat
+cd ~/$kat
+echo podaj szukana fraze
+read fraza
+grep "$fraza" *
