@@ -1,0 +1,8 @@
+1.
+  #!/bin/bash
+  echo skrypt
+  echo wczytano: $*
+  echo katalogi do utworzenia: $1, $2
+  cd ~
+  mkdir -p $1, $2
+  ps > $3
