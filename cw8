@@ -29,3 +29,150 @@ b="Ala i Kot"
 export b
 3.5,6,7
 ./skrypt2
+
+////////////////////////skrypty///////////////////////////
+zad1
+#!/bin/bash
+
+if [[ " $@ " =~ " las " ]]; then
+    echo "Wartość 'las' została znaleziona w przekazanych parametrach."
+fi
+
+if [[ " $@ " =~ " al " ]]; then
+    file_count=$(find . -maxdepth 1 -type f | grep -c '.' || true)
+    echo "Ilość zwykłych plików w katalogu domowym: $file_count"
+fi
+
+zad2
+#!/bin/bash
+
+if [ $# -lt 3 ]; then
+    echo "Za mało argumentów"
+    exit 11
+elif [ $# -eq 3 ]; then
+    touch "$2"
+    ls -l "$HOME"
+    exit 55
+else
+    find . -maxdepth 3 -type d | wc -l
+    exit 22
+fi
+
+zad3
+#!/bin/bash
+filename=$1
+if [ -f "$filename" ]; then
+  filesize=$(stat -c%s "$filename")
+  if [ $filesize -gt 150 ]; then
+    for file in *; do
+        if [ -f "$file" ]; then
+         filesize1=$(stat -c%s "$file")
+         if [ $filesize1 -gt 150 ]; then
+                echo "$file"
+         fi
+        fi
+    done
+  fi
+else
+  echo "Plik $filename nie istnieje."
+fi
+
+zad4
+#!/bin/bash
+pierwszy_argument="$1"
+licznik_powtorzen=0
+for argument in "$@"; do
+  if [ "$argument" == "$pierwszy_argument" ]; then
+    licznik_powtorzen=$((licznik_powtorzen + 1))
+  fi
+done
+echo "Wartość '$pierwszy_argument' powtarza się $licznik_powtorzen razy."
+
+zad5
+#!/bin/bash
+nazwa_skryptu=$0
+echo $nazwa_sktyptu
+read -p "Podaj wyraz: " wyraz
+if [ $nazwa_skryptu == $wyraz ]; then
+  echo "Wczytany wyraz jest równy nazwie skryptu."
+else
+  echo "Wczytany wyraz nie jest równy nazwie skryptu."
+fi
+
+zad6
+#!/bin/bash
+liczba_parametrow=$#
+if [ $liczba_parametrow -gt 3 ]; then
+  echo "Pierwszy parametr: $1"
+  echo "Trzeci parametr: $3"
+  if [ $1 == $3 ]; then
+    echo "Parametry są równe"
+  else
+    echo "Parametry nie są równe"
+  fi
+else
+  echo "Liczba parametrów musi być większa niż 3"
+  exit 17
+fi
+
+zad 7
+#!/bin/bash
+ilosc_parametrow=$#
+if [ $ilosc_parametrow -gt 4 ]; then
+  exit 25
+fi
+if [ $ilosc_parametrow -eq 1 ] && [ "$1" = "drzewo" ]; then
+  tree
+  exit 0
+fi
+if [ $ilosc_parametrow -eq 1 ] && [ "$1" = "zwykle" ]; then
+  ls --
+  exit 0
+fi
+echo "Numer procesu: $$"
+exit 123
+zad 8
+#!/bin/bash
+home_dir=$(getent passwd $USER | cut -d: -f6)
+logged_in_users=$(who | wc -l)
+echo "Katalog domowy: $home_dir"
+echo "Liczba zalogowanych użytkowników: $logged_in_users"
+
+zad9
+#!/bin/bash
+liczba_parametrow=$#
+if [ $1 == "dwa" ]; then
+  echo $(date)
+fi
+if [ $liczba_parametrow -eq 2 ]; then
+   nazwa_pliku=$2
+
+   if [ -f "$nazwa_pliku" ]; then
+     echo "Plik $nazwa_pliku istnieje."
+   else
+     echo "Plik $nazwa_pliku nie istnieje."
+   fi
+fi
+
+zad 10
+#!/bin/bash
+liczba_parametrow=$#
+if [ $1 == "dwa" ]; then
+  echo $(date)
+fi
+if [ $liczba_parametrow -eq 2 ]; then
+   nazwa_pliku=$2
+
+   if [ -f "$nazwa_pliku" ]; then
+     echo "Plik $nazwa_pliku istnieje."
+   else
+     echo "Plik $nazwa_pliku nie istnieje."
+   fi
+fi
+if [ $2 == "tworz" ]; then
+  echo "podaj nazwe pliku do zapisu PID: "
+read nazwa_pliku_pid
+pid=$$
+echo $pid > $nazwa_pliku_pid
+echo "PID zapisany do pliku $nazwa_pliku_pid."
+fi
